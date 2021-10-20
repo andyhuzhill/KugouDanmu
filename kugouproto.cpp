@@ -56,9 +56,9 @@ QString KugouProto::loginRequest(int roomid, QString socToken)
     return QString::fromStdString(encodedMsg);
 }
 
-QString KugouProto::decode(QByteArray binaryMessage)
+QVariantMap KugouProto::decode(QByteArray binaryMessage)
 {
-    QString result;
+    QVariantMap result;
 
     qDebug() << "binaryMessage = " << binaryMessage;
 

@@ -11,6 +11,7 @@
 
 #include <QObject>
 #include <QString>
+#include <QVariantMap>
 
 #include <string>
 #include <vector>
@@ -30,7 +31,7 @@ public:
 public slots:
     QString loginRequest(int roomid, QString socToken);
 
-    QString decode(QByteArray binaryMessage);
+    QVariantMap decode(QByteArray binaryMessage);
 
 private:
     std::string encode(std::string msg, int cmd);

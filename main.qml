@@ -34,6 +34,8 @@ Window {
 
         onBinaryMessageReceived: function (binaryMsg) {
             var msg = kugou.decode(binaryMsg)
+
+            msgModel.append(msg)
         }
 
         onStatusChanged: function (status) {
