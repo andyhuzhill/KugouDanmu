@@ -1,0 +1,5 @@
+[requires]
+protobuf/3.6.1@bincrafters/stable
+
+[generators]
+qmake
