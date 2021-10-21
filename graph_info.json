@@ -1,0 +1,22 @@
+{
+ "options": [
+  [
+   "protobuf:lite",
+   "False"
+  ],
+  [
+   "protobuf:shared",
+   "False"
+  ],
+  [
+   "protobuf:with_zlib",
+   "False"
+  ]
+ ],
+ "root": {
+  "name": null,
+  "version": null,
+  "user": null,
+  "channel": null
+ }
+}

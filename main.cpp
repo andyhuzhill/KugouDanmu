@@ -9,6 +9,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include <QFont>
 
 #include "kugouproto.hpp"
 
@@ -19,6 +20,10 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
+
+    QFont font;
+    font.setFamily("Microsoft YaHei");
+    app.setFont(font);
 
     KugouProto kugouProto;
 

@@ -1,4 +1,4 @@
-QT += quick network websockets
+QT += quick
 
 CONFIG += c++17
 
@@ -34,5 +34,12 @@ QML_DESIGNER_IMPORT_PATH =
 unix: CONFIG += link_pkgconfig
 unix: PKGCONFIG += protobuf
 
+win32: {
+CONFIG += conan_basic_setup
+include(conanbuildinfo.pri)
+}
+
 DISTFILES += \
-    kugou.proto
+    kugou.proto \
+    main.py \
+    qml.py
