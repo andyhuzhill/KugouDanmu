@@ -5,9 +5,9 @@ import sys
 
 import json
 
-from PySide2.QtCore import QObject, Signal, Slot
-from PySide2.QtGui import QGuiApplication, QFont
-from PySide2.QtQml import QQmlApplicationEngine
+from PyQt5.QtCore import QObject, pyqtSignal, pyqtSlot
+from PyQt5.QtGui import QGuiApplication, QFont
+from PyQt5.QtQml import QQmlApplicationEngine
 
 import qml
 
@@ -19,7 +19,7 @@ from threading import Thread
 running = True
 
 class KugouProto(QObject):
-    newMessage = Signal(str, str)
+    newMessage = pyqtSignal(str, str)
 
     def __init__(self) -> None:
         super().__init__()
